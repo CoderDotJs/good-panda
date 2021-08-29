@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GoodPanda</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand fw-bold" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                </ul>
+
+                                <!-- Button trigger modal -->
+                <button type="button" class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-shopping-cart fa-2x pointer"></i>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart Items</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" class="cart" id="cart">
+                        
+                          <!-- carts added here dynamically -->
+                       
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+            <!-- food searchbar  -->
+    <div class="search-bar m-4 container mx-auto">
+        <form class="mx-auto container d-flex justify-content-center align-items-center">
+          <div class="w-50 d-flex justify-content-center px-2">
+            <input class="form-control me-2 w-100" type="search" id="input" placeholder="Search" aria-label="Search">
+          </div>
+          <div class="px-2">
+            <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+          </div>
+          </form>
+    </div>
+    <h1 id="search-name" class="container"></h1>
+        <!-- display full details about food -->
+        <div id="food-info" class="mt-5">
+            <div class="container" id="card-deck">
+                
+            </div>
+        </div>
+        <!-- food search list -->
+    <div id="food-display" class="w-80 mx-auto container my-4">
+        
+      <!-- search item name -->
+        
+           <!-- list -->
+        <div class="row row-cols-1 row-cols-md-3 g-3 w-80 mx-auto my-5" id="items">
+            <!-- dynamically items added here  -->
+            <h1 class="text-muted text-center flex-grow-1 " id="search-display">Your search will displayed here</h1>
+            
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
